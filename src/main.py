@@ -11,8 +11,8 @@ def main():
     try:
         raw_to_bronze(
             spark=spark, 
-            source_path="data/raw/application_train.csv", 
-            destination_path="data/bronze")
+            source_path="data/raw", 
+            destination_folder="data/bronze")
         
         print("File was successfully created in bronze layer.")
 
